@@ -8,3 +8,6 @@ app.listen(app.get("port"), leerPuerto());
 function leerPuerto() {
   console.log("Hola desde el puerto " + app.get("port"));
 }
+
+//Rutas
+app.use(require("./routes/index"));
